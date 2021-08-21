@@ -5,4 +5,108 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body, a, button, form, input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  min-width: 280px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+.header__logo {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+}
+
+.header__logo--button {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  text-align: right;
+}
+
+.header__logo--btn {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #ff52bf;
+  background-color: transparent;
+  border-radius: 24px;
+  color: #ff52bf;
+}
+
+.header__logo--img {
+  width: 100%;
+}
+
+.main__banner {
+  max-width: 1200px;
+  min-width: 280px;
+  margin: 100px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.main__banner .banner__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.main__banner .banner__paragraph {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.main__banner .banner__btn {
+  background-color: #ff52bf;
+  color: #fff;
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 24px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
+}
+
+.banner__picture .banner__img {
+  width: 80%;
+}
+
+.banner__data {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.banner__data .banner__data--heading {
+  font-size: 62px;
+}
+
+.banner__data .banner__data--paragraph {
+  color: #989BA2;
+}
+
+.banner__data--img {
+  display: block;
+  margin: 0 auto 0 0;
+  width: 20%;
+}
 /*# sourceMappingURL=estilos.css.map */
