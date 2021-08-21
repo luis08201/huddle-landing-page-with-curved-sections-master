@@ -42,12 +42,23 @@ input {
 }
 
 .header__logo--btn {
-  width: 140px;
+  width: 100px;
+  font-size: 13px;
   height: 40px;
   border: 1px solid #ff52bf;
   background-color: transparent;
   border-radius: 24px;
   color: #ff52bf;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.header__logo--btn:hover {
+  color: rgba(255, 143, 216, 0.459);
+  border: 1px solid rgba(255, 143, 216, 0.459);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px rgba(255, 143, 216, 0.459);
+          box-shadow: 0 0 8px rgba(255, 143, 216, 0.459);
 }
 
 .header__logo--img {
@@ -89,6 +100,15 @@ input {
   margin-bottom: 60px;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.main__banner .banner__btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 143, 216, 0.459);
+  -webkit-box-shadow: 0 4px 15px rgba(255, 143, 216, 0.459);
+          box-shadow: 0 4px 15px rgba(255, 143, 216, 0.459);
 }
 
 .banner__picture .banner__img {
@@ -152,7 +172,12 @@ input {
     max-width: 100%;
   }
   .main__banner .banner__btn {
-    width: 180px;
+    width: 260px;
+    font-size: 13px;
+    margin-bottom: 110px;
+  }
+  .main__banner .banner__data {
+    margin-top: 120px;
   }
 }
 
@@ -360,6 +385,8 @@ input {
 
 @media screen and (max-width: 600px) {
   .second__curve .subsecond__curve {
+    margin: 0 auto;
+    padding: 30px 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -478,7 +505,7 @@ input {
     position: relative;
     width: 100%;
     padding: 0.1px;
-    margin: 160px auto;
+    margin: 160px auto 0;
   }
   .third__curve .third__curve--bgitop {
     background-image: url(../img/bg-section-top-mobile-1.svg);
@@ -574,16 +601,28 @@ input {
   border-radius: 24px;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.308);
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.fourth__curve--btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 143, 216, 0.459);
+  -webkit-box-shadow: 0 4px 15px rgba(255, 143, 216, 0.459);
+          box-shadow: 0 4px 15px rgba(255, 143, 216, 0.459);
 }
 
 @media screen and (max-width: 375px) {
+  .fourth__curve {
+    margin: 60px auto 180px;
+  }
   .fourth-curve--heading {
     font-size: 22px;
   }
   .fourth__curve--btn {
-    font-size: 12px;
-    width: 160px;
-    height: 50px;
+    font-size: 13px;
+    width: 220px;
+    height: 45px;
   }
 }
 
@@ -670,6 +709,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .footer__form .footer__email {
@@ -694,6 +734,16 @@ input {
   border: none;
   background-color: #ff52bf;
   color: #fff;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+  border-radius: 4px;
+}
+
+.footer__form .footer__btn:hover {
+  cursor: pointer;
+  background-color: #fa62c5;
+  -webkit-box-shadow: 0 4px 15px #fa62c5;
+          box-shadow: 0 4px 15px #fa62c5;
 }
 
 .footer__body {
@@ -712,6 +762,12 @@ input {
   text-decoration: none;
   color: #fff;
   font-size: 32px;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.footer__socialnetwork .footer__scn:hover {
+  color: #00C8FF;
 }
 
 .footer__attribution {
@@ -723,6 +779,32 @@ input {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.footer__attribution--link:hover {
+  color: #00C8FF;
+}
+
+/*POP UP*/
+.emailText {
+  font-style: italic;
+  font-weight: 300;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.footer__email.valid .emailText {
+  color: #4f7df3;
+}
+
+.footer__email.invalid .emailText {
+  color: #ff52bf;
+}
+
+.footer__input.invalid:focus {
+  border: 1px solid #ff52bf;
 }
 
 @media screen and (max-width: 768px) {
